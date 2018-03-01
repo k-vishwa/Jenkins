@@ -18,7 +18,7 @@ pipeline {
                 // '''
                 script {
                     log.info 'Starting'
-                    log.warning 'Nothing to do!'
+                //     log.warning 'Nothing to do!'
                 }
             }
         }
