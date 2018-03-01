@@ -5,7 +5,7 @@
 
 
 pipeline {
-    agent any
+    agent none
     stages {
         /* "Build" and "Test" stages omitted */
 
