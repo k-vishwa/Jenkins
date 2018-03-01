@@ -5,7 +5,7 @@
 
 
 pipeline {
-    agent none
+    agent any
     stages {
         /* "Build" and "Test" stages omitted */
 
@@ -20,8 +20,7 @@ pipeline {
                    /* sayHello 'Joe'
                     sayHello() /* invoke with default arguments */
                 /*    log.warning 'Nothing to do!' */
-                def z =  new Bar(1,2)
-                z.getVars()
+                new Bar(1,2).getVars()
                 }
             }
         }
