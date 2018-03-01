@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
-@Library('demo') 
-import org.*
+@Library('demo') _
+// import org.*
 
 
 pipeline {
