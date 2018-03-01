@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 @Library('demo') _
- import org.foo.Bar
+ import org.foo.*
 
 
 pipeline {
@@ -20,7 +20,8 @@ pipeline {
                    /* sayHello 'Joe'
                     sayHello() /* invoke with default arguments */
                 /*    log.warning 'Nothing to do!' */
-                new Bar(1,2).getVars()
+                param = []
+                new Bar(1).getVars()
                 }
             }
         }
