@@ -1,5 +1,5 @@
-@Library('demo')
-import org.foo.*
+@Library('demo') _
+// import org.foo.*
 
 
 pipeline {
@@ -12,7 +12,7 @@ pipeline {
                 echo "hahahah"
                 '''
                 script {
-                    ret = new Bar("1").getVars()
+                    ret = new org.foo.Bar("1").getVars()
                     println ret
                 }
             }
