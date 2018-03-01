@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 @Library('demo') _
-// import org.*
+ import org.foo.Bar
 
 
 pipeline {
@@ -17,9 +17,11 @@ pipeline {
                     echo $singlyQuoted $doublyQuoted
                  '''*/
                 script {
-                    sayHello 'Joe'
+                   /* sayHello 'Joe'
                     sayHello() /* invoke with default arguments */
                 /*    log.warning 'Nothing to do!' */
+                def z =  new Bar(1,2)
+                z.getVars()
                 }
             }
         }
