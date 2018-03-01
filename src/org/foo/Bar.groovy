@@ -3,7 +3,8 @@ package org.foo
 class Bar implements Serializable {
     def x
     def y
-    Bar() {
+    
+    Bar(x,y) {
         this.x = x
         this.y = y
     }
