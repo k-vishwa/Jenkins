@@ -16,8 +16,10 @@ pipeline {
                     echo "Testing"
                     echo $singlyQuoted $doublyQuoted
                 '''
-                def z = new Bar(1,2)
-                z.getVars()
+                script {
+                    def z = new Bar(1,2)
+                    z.getVars()
+                }
             }
         }
 
