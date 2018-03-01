@@ -3,6 +3,11 @@
 @Library('demo') _
  import org.foo.*
 
+#!/usr/bin/env groovy
+
+@Library('demo') _
+ import org.foo.*
+
 
 pipeline {
     agent any
@@ -11,30 +16,13 @@ pipeline {
 
         stage('Deploy - Staging') {
             steps {
-                /* sh '''
-                    echo "Deploying"
-                    echo "Testing"
-                    echo $singlyQuoted $doublyQuoted
-                 '''*/
-                   /* sayHello 'Joe'
-                    sayHello() /* invoke with default arguments */
-                /*    log.warning 'Nothing to do!' */
                 script {
-                new Bar("1").getVars()
+                    ret = new Bar("1").getVars()
+                    println ret
                 }
             }
         }
 
-        stage('Sanity check') {
-            steps {
-                input "Does the staging environment look ok?"
-            }
-        }
-
-        stage('Deploy - Production') {
-            steps {
-                sh 'echo "Running Prod"'
-            }
-        }
+       
     }
 }
