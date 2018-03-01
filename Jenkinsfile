@@ -11,14 +11,15 @@ pipeline {
 
         stage('Deploy - Staging') {
             steps {
-                // sh '''
-                //     echo "Deploying"
-                //     echo "Testing"
-                //     echo $singlyQuoted $doublyQuoted
-                // '''
+                /* sh '''
+                    echo "Deploying"
+                    echo "Testing"
+                    echo $singlyQuoted $doublyQuoted
+                 '''*/
                 script {
-                    log.info 'Starting'
-                //     log.warning 'Nothing to do!'
+                    sayHello 'Joe'
+                    sayHello() /* invoke with default arguments */
+                /*    log.warning 'Nothing to do!' */
                 }
             }
         }
