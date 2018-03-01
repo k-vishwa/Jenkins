@@ -1,14 +1,18 @@
 package org.foo
 
 class Bar implements Serializable {
-    def x
-    def y
+    def script
+    def config
 
-    Bar(y) {
+    Bar() {
+    }
+
+    Bar(script,config) {
         //this.x = x
-        this.y = y
+        this.script = script
+        this.config = config
     }
     void getVars() {
-        println  this.y
+        println  this.config.var
     }
 }
