@@ -2,9 +2,6 @@
 
 @Library('demo') _
  import org.foo.*
-
-#!/usr/bin/env groovy
-
 @Library('demo') _
  import org.foo.*
 
