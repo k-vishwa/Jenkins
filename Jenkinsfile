@@ -6,8 +6,6 @@ import org.foo.Bar
 
 pipeline {
     agent any
-    def singlyQuoted = 'Hello'
-    def doublyQuoted = "World"
     stages {
         /* "Build" and "Test" stages omitted */
 
