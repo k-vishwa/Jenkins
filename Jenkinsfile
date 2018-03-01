@@ -1,7 +1,3 @@
-#!/usr/bin/env groovy
-
-@Library('demo') _
- import org.foo.*
 @Library('demo') _
  import org.foo.*
 
