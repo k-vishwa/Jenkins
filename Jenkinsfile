@@ -2,6 +2,8 @@
 
 pipeline {
     agent any
+    def singlyQuoted = 'Hello'
+    def doublyQuoted = "World"
     stages {
         /* "Build" and "Test" stages omitted */
 
@@ -10,6 +12,7 @@ pipeline {
                 sh '''
                     echo "Deploying"
                     echo "Testing"
+                    echo $singlyQuoted $doublyQuoted
                 '''
             }
         }
