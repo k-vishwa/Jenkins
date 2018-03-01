@@ -1,5 +1,9 @@
 #!/usr/bin/env groovy
 
+@Library('demo') 
+import org.foo.Bar
+
+
 pipeline {
     agent any
     def singlyQuoted = 'Hello'
@@ -14,6 +18,8 @@ pipeline {
                     echo "Testing"
                     echo $singlyQuoted $doublyQuoted
                 '''
+                def z = new Bar(1,2)
+                z.getVars()
             }
         }
 
