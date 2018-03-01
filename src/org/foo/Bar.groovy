@@ -7,12 +7,12 @@ class Bar implements Serializable {
     Bar() {
     }
 
-    Bar(script,config) {
+    Bar(config) {
         //this.x = x
-        this.script = script
+        // this.script = script
         this.config = config
     }
-    void getVars() {
-        println  this.config.var
+    def getVars() {
+        return  this.config
     }
 }

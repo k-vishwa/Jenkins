@@ -20,8 +20,7 @@ pipeline {
                     sayHello() /* invoke with default arguments */
                 /*    log.warning 'Nothing to do!' */
                 script {
-                param = [var:"1"]
-                new Bar(this,param).getVars()
+                new Bar("1").getVars()
                 }
             }
         }
