@@ -16,13 +16,10 @@ pipeline {
                     echo "Testing"
                     echo $singlyQuoted $doublyQuoted
                  '''*/
-                script {
                    /* sayHello 'Joe'
                     sayHello() /* invoke with default arguments */
                 /*    log.warning 'Nothing to do!' */
-                param = []
                 new Bar(1).getVars()
-                }
             }
         }
 
