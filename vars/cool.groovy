@@ -1,4 +1,4 @@
-def info(message) {
+def info(def message) {
     echo "COOL INFO: ${message}"
 }
 
