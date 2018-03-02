@@ -25,7 +25,7 @@ pipeline {
                     // buildPlugin { 
                     //     name = "git"
                     // }
-                    buildPlugin([name: 'git'])
+                    buildPlugin name: 'git'
                 }
             }
         }
