@@ -2,9 +2,7 @@
 // import org.foo.*
 
 
-buildPlugin {
-    name: 'git'
-}
+buildPlugin name: 'git'
 
 /*evenOrOdd(currentBuild.getNumber())
 /*
