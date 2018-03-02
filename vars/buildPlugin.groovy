@@ -8,7 +8,7 @@
 // }
 
 
-def call(body) {
+def call(Closure body) {
 
     def config = [:]
     body.resolveStrategy = Closure.DELEGATE_FIRST
