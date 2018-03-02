@@ -17,23 +17,14 @@ pipeline {
                     z.checkOutFrom("https://github.com/k-vishwa/blue.git")
                 }*/
                 script { 
-                    cool.info 'Starting'
+                    cool.info {
+                        message='Starting'
+                    }
                     cool.warning 'Nothing to do!'
                 }
             }
         }
 
        
-    }
-}
-
-pipeline {
-    agent any
-    stage('Deploy - Staging -----2') {
-            steps {
-                sh '''
-                echo "hahahah"
-                '''
-            }
     }
 }
