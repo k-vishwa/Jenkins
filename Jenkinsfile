@@ -18,7 +18,7 @@ pipeline {
                     println z
                 } */
                 script { 
-                    buildPlugin name: 'git'
+                    buildPlugin(name: 'git')
                 }
             }
         }
