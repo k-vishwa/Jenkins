@@ -12,8 +12,8 @@ pipeline {
                 echo "hahahah"
                 '''
                 script {
-                    ret = new org.foo.Bar("1").getVars()
-                    println ret
+                    def z = new org.foo.Zot()
+                    z.checkOutFrom("https://github.com/k-vishwa/blue.git")
                 }
             }
         }
