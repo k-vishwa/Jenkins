@@ -2,7 +2,7 @@
 // import org.foo.*
 
 
-sayHello()
+buildPlugin name: 'git'
 
 /*evenOrOdd(currentBuild.getNumber())
 /*
