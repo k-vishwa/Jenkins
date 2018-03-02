@@ -3,7 +3,7 @@
 
 
 buildPlugin {
-    name='git'
+    name: 'git'
 }
 
 /*evenOrOdd(currentBuild.getNumber())
