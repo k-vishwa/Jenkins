@@ -16,10 +16,24 @@ pipeline {
                     def z = new org.foo.Zot()
                     z.checkOutFrom("https://github.com/k-vishwa/blue.git")
                 }*/
-                sayHello 'Dave'
+                script { 
+                    cool.info 'Starting'
+                    cool.warning 'Nothing to do!'
+                }
             }
         }
 
        
+    }
+}
+
+pipeline {
+    agent any
+    stage('Deploy - Staging -----2') {
+            steps {
+                sh '''
+                echo "hahahah"
+                '''
+            }
     }
 }
