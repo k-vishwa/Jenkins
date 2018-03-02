@@ -20,7 +20,8 @@ def call(body) {
         git url: "${config.name}"
 
     echo '222222'
-        git(url: config.name)
+        // git(url: config.name)
+        git(url: "https://github.com/jenkinsci/pipeline-examples.git")
         // sh 'mvn install'
         //  mail to: '...', subject: "${config.name} plugin build", body: '...' */
         //  stage ('in BUild Plugin'){
