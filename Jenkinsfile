@@ -18,8 +18,8 @@ pipeline {
                     println z
                 } */
                 script { 
-                    def param = [name: 'git']
-                    buildPlugin{param}
+                    //def param = [name: 'git']
+                    buildPlugin{name: 'git'}
                 }
             }
         }

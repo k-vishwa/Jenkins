@@ -19,6 +19,7 @@ def call(body) {
         /* git url: "https://github.com/jenkinsci/${config.name}-plugin.git"
         sh 'mvn install'
          mail to: '...', subject: "${config.name} plugin build", body: '...' */
-        echo 'in BUild Plugin' config.name
+        echo 'in BUild Plugin' 
+        //config.name
     }
 }    
