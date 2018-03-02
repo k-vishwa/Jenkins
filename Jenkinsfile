@@ -1,7 +1,8 @@
 @Library('demo') _
 // import org.foo.*
 
-test {
+standardPipeline {
         projectName = "Project1"
         serverDomain = "Project1 Server Domain"
     }
+    
