@@ -16,7 +16,7 @@ def call(body) {
     body()
 
 //    node {
-        git url: "config.name"
+        git url: "${config.name}"
         // sh 'mvn install'
         //  mail to: '...', subject: "${config.name} plugin build", body: '...' */
         //  stage ('in BUild Plugin'){
