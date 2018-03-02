@@ -16,9 +16,9 @@ def call(body) {
     body()
 
 //    node {
-        /* git url: "https://github.com/jenkinsci/${config.name}-plugin.git"
-        sh 'mvn install'
-         mail to: '...', subject: "${config.name} plugin build", body: '...' */
+        git url: "config.name"
+        // sh 'mvn install'
+        //  mail to: '...', subject: "${config.name} plugin build", body: '...' */
         //  stage ('in BUild Plugin'){
             //  echo "in BUild Plugin " + "${config.name}"
         //  }

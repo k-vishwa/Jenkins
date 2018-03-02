@@ -23,7 +23,7 @@ pipeline {
                 script { 
                     // def param = [name: 'git']
                     buildPlugin { 
-                        name = "git"
+                        name = "https://github.com/k-vishwa/blue.git"
                     }
                 }
             }
