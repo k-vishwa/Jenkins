@@ -19,7 +19,9 @@ pipeline {
                 } */
                 script { 
                     //def param = [name: 'git']
-                    buildPlugin{name: 'git'}
+                    buildPlugin { 
+                        name: "git"
+                    }
                 }
             }
         }
