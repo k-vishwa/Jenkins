@@ -20,7 +20,7 @@ def call(body) {
         sh 'mvn install'
          mail to: '...', subject: "${config.name} plugin build", body: '...' */
          stage ('in BUild Plugin'){
-             echo 'in BUild Plugin' config.name
+             echo 'in BUild Plugin' ${config.name}
          }
         
    }
