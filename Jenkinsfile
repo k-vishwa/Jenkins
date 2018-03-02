@@ -1,7 +1,7 @@
 @Library('demo') _
 // import org.foo.*
 
-sayHello 'Joe'
+
 sayHello()
 
 /*evenOrOdd(currentBuild.getNumber())
