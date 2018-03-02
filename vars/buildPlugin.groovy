@@ -16,6 +16,10 @@ def call(body) {
     body()
 
 //    node {
+    echo '111111'
+        git url: "${config.name}"
+
+    echo '222222'
         git(url: config.name)
         // sh 'mvn install'
         //  mail to: '...', subject: "${config.name} plugin build", body: '...' */
