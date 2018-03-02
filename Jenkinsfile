@@ -15,6 +15,7 @@ pipeline {
                 script {
                     def z = new org.foo.Zot()
                     z.checkOutFrom("https://github.com/k-vishwa/blue.git")
+                    println z
                 }
                 /*script { 
                     cool.info 'Starting'
