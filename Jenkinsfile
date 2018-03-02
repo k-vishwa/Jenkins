@@ -12,15 +12,14 @@ pipeline {
                 sh '''
                 echo "hahahah"
                 '''
-                script {
+               /*  script {
                     def z = new org.foo.Zot()
                     z.checkOutFrom("https://github.com/k-vishwa/blue.git")
                     println z
+                } */
+                script { 
+                    buildPlugin name: 'git'
                 }
-                /*script { 
-                    cool.info 'Starting'
-                    cool.warning 'Nothing to do!'
-                }*/
             }
         }
 
