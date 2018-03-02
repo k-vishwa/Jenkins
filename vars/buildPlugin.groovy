@@ -22,7 +22,7 @@ def call(body) {
         //  stage ('in BUild Plugin'){
             //  echo "in BUild Plugin " + "${config.name}"
         //  }
-        println config.name
+        println config
         
 //    }
 }    
