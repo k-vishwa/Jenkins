@@ -15,10 +15,10 @@ def call(body) {
     body.delegate = config
     body()
 
-    node {
+  //  node {
         /* git url: "https://github.com/jenkinsci/${config.name}-plugin.git"
         sh 'mvn install'
          mail to: '...', subject: "${config.name} plugin build", body: '...' */
         echo 'in BUild Plugin' config.name
-    }
+   // }
 }    
