@@ -16,18 +16,18 @@ def call(body) {
     body()
 
 //    node {
-    echo '111111'
-        git url: "${config.name}"
+    // echo '111111'
+    //     git url: "${config.name}"
 
-    echo '222222'
-        // git(url: config.name)
-        git(url: "https://github.com/jenkinsci/pipeline-examples.git")
+    // echo '222222'
+    //     // git(url: config.name)
+    //     git(url: "https://github.com/jenkinsci/pipeline-examples.git")
         // sh 'mvn install'
         //  mail to: '...', subject: "${config.name} plugin build", body: '...' */
         //  stage ('in BUild Plugin'){
             //  echo "in BUild Plugin " + "${config.name}"
         //  }
-        println config
+        println "hholla" + body.name
         
 //    }
 }    
