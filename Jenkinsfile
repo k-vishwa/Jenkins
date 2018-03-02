@@ -16,8 +16,8 @@ pipeline {
                     z.checkOutFrom("https://github.com/k-vishwa/blue.git")
                 }*/
                 script { 
-                    log.info 'Starting'
-                    log.warning 'Nothing to do!'
+                    test.log.info 'Starting'
+                    test.log.warning 'Nothing to do!'
                 }
             }
         }
