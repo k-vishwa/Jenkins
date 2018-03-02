@@ -18,7 +18,7 @@ pipeline {
                 script { 
                     cool.info 'Starting'
                     cool.warning 'Nothing to do!'
-                    sayHello 'Joe'
+                    sayHello('Joe')
                     sayHello()
                 }
             }
