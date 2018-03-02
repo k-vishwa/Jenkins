@@ -11,9 +11,13 @@ pipeline {
                 sh '''
                 echo "hahahah"
                 '''
-                script {
+               /* script {
                     def z = new org.foo.Zot()
                     z.checkOutFrom("https://github.com/k-vishwa/blue.git")
+                }*/
+                script { 
+                    log.info 'Starting'
+                    log.warning 'Nothing to do!'
                 }
             }
         }
