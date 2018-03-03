@@ -13,7 +13,7 @@ pipeline {
         stage('Deploy - Staging') {
             steps {
                 sh '''
-                echo "hahahah"
+                echo "---------"
                 '''
                /*  script {
                     def z = new org.foo.Zot()
